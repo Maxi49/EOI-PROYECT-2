@@ -1,0 +1,27 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { Start } from './Start'
+import './styles.css'
+import { Boxes } from './Boxes'
+import { Header } from './Header'
+import { BoxesTwo } from './secondBox/BoxesTwo'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+  },
+});
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ThemeProvider theme={lightTheme}>
+      <CssBaseline/>
+      <Header/>
+      <Start/>
+      <Boxes/>
+      <BoxesTwo/>
+    </ThemeProvider>
+  </React.StrictMode>,
+)
