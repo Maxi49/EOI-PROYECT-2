@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const useColorChangeOnView = (initialColor, targetColor) => {
+export const useColorChangeOnView = (targetColor) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -9,7 +9,7 @@ export const useColorChangeOnView = (initialColor, targetColor) => {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setIsVisible(entry.isIntersecting));
-    }, { threshold: 0.4 });
+    }, { threshold: 0.05 });
 
     if (currentRef) {
       observer.observe(currentRef);
@@ -27,10 +27,8 @@ export const useColorChangeOnView = (initialColor, targetColor) => {
 
     if (isVisible) {
       document.body.style.backgroundColor = targetColor;
-    } else {
-      document.body.style.backgroundColor = initialColor;
     }
-  }, [isVisible, initialColor, targetColor]);
+  }, [isVisible, targetColor]);
 
   return ref;
 };

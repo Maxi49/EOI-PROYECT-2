@@ -1,15 +1,15 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { useColorChangeOnView } from "./hook/useColorChangeOnView";
 import "./styles.css";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { DividedBoxes1 } from "../src/DividedBoxes/DividedBoxes1";
 import { DividedBoxes2 } from "../src/DividedBoxes/DividedBoxes2";
-import FmdBadOutlinedIcon from '@mui/icons-material/FmdBadOutlined';
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import FmdBadOutlinedIcon from "@mui/icons-material/FmdBadOutlined";
+import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
+import { useColorChangeOnView } from "./hook/useColorChangeOnView";
 export const Boxes = () => {
-  const boxRef = useColorChangeOnView("#000000", "#b6dbd0");
+  const boxRef = useColorChangeOnView("#b6dbd0");
 
   const theme = createTheme({
     typography: {
@@ -80,6 +80,7 @@ export const Boxes = () => {
         }}
       >
         <Box
+
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -191,7 +192,11 @@ export const Boxes = () => {
             </Box>
           </Box>
           <Box sx={{ width: { xs: "80%", sm: "50%", md: "40%" } }}>
-            <img src="../undraw_social_sharing_re_pvmr.svg" className="wrong" alt="img" />
+            <img
+              src="../undraw_social_sharing_re_pvmr.svg"
+              className="wrong"
+              alt="img"
+            />
           </Box>
         </Box>
 
@@ -217,8 +222,8 @@ export const Boxes = () => {
             direction: "row",
             backgroundColor: "white",
             borderRadius: 10,
-            gap: {xs:10,md:20},
-            mt:10,
+            gap: { xs: 10, md: 20 },
+            mt: 10,
             mb: 5,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
@@ -239,7 +244,7 @@ export const Boxes = () => {
                   alignItems: "center",
                 }}
               >
-                <ThumbUpOffAltIcon fontSize="large" sx={{color:"white"}} />
+                <ThumbUpOffAltIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -251,7 +256,10 @@ export const Boxes = () => {
                   fontWeight: 700,
                 }}
               >
-                Efectos positivos del <span style={{ color: "#00b900", fontWeight: 1000 }}>consumo</span>
+                Efectos positivos del{" "}
+                <span style={{ color: "#00b900", fontWeight: 1000 }}>
+                  consumo
+                </span>
               </Typography>
               <Typography
                 variant={"h6"}
@@ -275,8 +283,12 @@ export const Boxes = () => {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "60%", sm: "50%", md: "30%" } }}>
-            <img src="../undraw_completed_m9ci.svg" alt="img" className="wrong" />
+          <Box sx={{ width: { xs: "50%", sm: "50%", md: "30%" } }}>
+            <img
+              src="../undraw_completed_m9ci.svg"
+              alt="img"
+              className="wrong"
+            />
           </Box>
         </Box>
         <Box
@@ -291,7 +303,7 @@ export const Boxes = () => {
             gap: 10,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 930, sm: 1000, md: 700, lg: 900 },
+            height: { xs: 950, sm: 1000, md: 700, lg: 900 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -309,7 +321,7 @@ export const Boxes = () => {
                   alignItems: "center",
                 }}
               >
-                <FmdBadOutlinedIcon fontSize="large" sx={{color:"white"}} />
+                <FmdBadOutlinedIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -321,7 +333,8 @@ export const Boxes = () => {
                   fontWeight: 700,
                 }}
               >
-                Efectos negativos del <span style={{color:'#b90000'}}>consumismo</span>
+                Efectos negativos del{" "}
+                <span style={{ color: "#b90000" }}>consumismo</span>
               </Typography>
               <Typography
                 variant={"h5"}
@@ -345,11 +358,14 @@ export const Boxes = () => {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "80%", sm: "50%", md: "40%" } }}>
-            <img src="../undraw_access_denied_re_awnf.svg" alt="img" className="wrong" />
+          <Box sx={{ width: { xs: "70%", sm: "50%", md: "40%" } }}>
+            <img
+              src="../undraw_access_denied_re_awnf.svg"
+              alt="img"
+              className="wrong"
+            />
           </Box>
         </Box>
-
       </Container>
     </ThemeProvider>
   );

@@ -71,7 +71,7 @@ export const DividedBoxes2 = () => {
             borderRadius: 10,
 
             width: { xs: "95vw", md: "35vw" },
-            height: { xs:500, sm:1000, md: 700, lg:600 },
+            height: { xs:500, sm:300, md: 700, lg:600 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection:{xs:'column'}}}>

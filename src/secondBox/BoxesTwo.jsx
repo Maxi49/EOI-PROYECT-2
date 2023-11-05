@@ -1,11 +1,12 @@
 import { Box, Container, ThemeProvider, createTheme } from "@mui/system";
-import { useColorChangeOnView } from "../hook/useColorChangeOnView";
+
 import { Typography } from "@mui/material";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import { DividedBoxesTic1 } from "../DividedBoxesTics/DividedBoxesTic1";
+import { DividedBoxesTic2 } from "../DividedBoxesTics/DividedBoxesTic2";
+import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 export const BoxesTwo = () => {
-  const boxRefTwo = useColorChangeOnView("#b6dbd0", "#fbe274");
-  const boxRefthree = useColorChangeOnView("#fbe274", "#fbe274");
   const theme = createTheme({
     typography: {
       h1: {
@@ -73,12 +74,26 @@ export const BoxesTwo = () => {
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
+      h6: {
+        fontSize: "1.1rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "1.6rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "1.5rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "1.3rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
     },
   });
+  const boxRef = useColorChangeOnView("#fbe274");
   return (
     <ThemeProvider theme={theme}>
       <Container
-        ref={boxRefTwo}
+        ref={boxRef}
         maxWidth="md"
         sx={{
           display: "flex",
@@ -129,7 +144,6 @@ export const BoxesTwo = () => {
           </Typography>
         </Box>
         <Box
-          ref={boxRefthree}
           sx={{
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "center",
@@ -179,7 +193,7 @@ export const BoxesTwo = () => {
                 textAlign={"start"}
                 sx={{
                   width: { xs: "80vw", md: "20vw" },
-                  color: "#bdbcbe",
+                  color: "#9b9b9b",
                   fontWeight: 700,
                 }}
               >
@@ -199,6 +213,89 @@ export const BoxesTwo = () => {
               alt="img"
             />
           </Box>
+        </Box>
+        <Box
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            direction: "row",
+            backgroundColor: "white",
+            borderRadius: 10,
+            gap: 10,
+            mb: 10,
+            width: { xs: "95vw", md: "70vw" },
+            height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
+            <Box sx={{ width: "100%" }}>
+              <Box
+                sx={{
+                  padding: 1,
+                  marginBottom: 5,
+                  width: { xs: 60, md: 70 },
+                  height: { xs: 60, md: 70 },
+                  backgroundColor: "black",
+                  borderRadius: 100,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <AccountBalanceIcon fontSize="large" sx={{ color: "white" }} />
+              </Box>
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Typography
+                variant="h3"
+                sx={{
+                  width: { xs: "80vw", md: "30vw" },
+                  color: "black",
+                  fontWeight: 700,
+                  mb: 3,
+                }}
+              >
+                Relacion con el{" "}
+                <span style={{ color: "#009FFF" }}>Mercado</span>
+              </Typography>
+              <Typography
+                variant={"h5"}
+                color={"white"}
+                textAlign={"start"}
+                sx={{
+                  width: { xs: "80vw", md: "20vw" },
+                  color: "#555555",
+                  fontWeight: 700,
+                }}
+              >
+                Las TICs han revolucionado el comercio, permitiendo a las
+                empresas llegar a consumidores globales en línea. Transacciones
+                electrónicas comunes y publicidad personalizada han transformado
+                la dinámica del mercado, impulsando la interconexión global en
+                la sociedad de consumo.
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ width: { xs: "80%", sm: "50%", md: "35%" } }}>
+            <img
+              src="../../undraw_stock_prices_re_js33 (1).svg"
+              alt="img"
+              className="wrong"
+            />
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "space-evenly",
+            gap: 2,
+          }}
+        >
+          <DividedBoxesTic1 />
+          <DividedBoxesTic2 />
         </Box>
       </Container>
     </ThemeProvider>

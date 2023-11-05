@@ -3,6 +3,7 @@ import { deepPurple } from "@mui/material/colors";
 import { Box, Container } from "@mui/system";
 import { useColorChangeOnView } from "./hook/useColorChangeOnView";
 
+
 const typo = createTheme();
 const buttonTheme = createTheme({
   palette: {
@@ -39,13 +40,12 @@ typo.typography.h6 = {
 };
 
 export const Start = () => {
-  const boxRef = useColorChangeOnView("#b6dbd0", "#000000");
+  const boxRef = useColorChangeOnView("#000");
   return (
     <ThemeProvider theme={typo}>
-      
       <Container
+
         component={'section'}
-        ref={boxRef}
         maxWidth="md"
         sx={{
           marginTop: { xs: 2, md: 4 },
@@ -59,6 +59,7 @@ export const Start = () => {
         }}
       >
         <Box
+        ref={boxRef}
           className="start"
           component={"section"}
           sx={{
