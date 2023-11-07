@@ -2,9 +2,10 @@ import { Box, Container, ThemeProvider, createTheme } from "@mui/system";
 
 import { Typography } from "@mui/material";
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
-import TravelExploreIcon from "@mui/icons-material/TravelExplore";
-import LanguageIcon from "@mui/icons-material/Language";
-export const Globalizacion = () => {
+import ChartModel from "./ChartModel";
+import PsychologyIcon from "@mui/icons-material/Psychology";
+import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+export const Entrevista = () => {
   const theme = createTheme({
     typography: {
       h1: {
@@ -85,9 +86,22 @@ export const Globalizacion = () => {
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
+      subtitle2: {
+        fontSize: "0.9rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "0.7rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "0.75rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "0.85rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
     },
   });
-  const boxRef = useColorChangeOnView("#bec7e7");
+  const boxRef = useColorChangeOnView("#000");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -105,7 +119,7 @@ export const Globalizacion = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#bec7e7", // Color original del componente Box
+            backgroundColor: "#000", // Color original del componente Box
             width: { xs: "95vw", md: "70vw" },
             height: { xs: "300px", md: 600 },
             borderRadius: 10,
@@ -126,10 +140,8 @@ export const Globalizacion = () => {
               fontWeight: 700,
             }}
           >
-            La{" "}
-            <span style={{ color: "#6d59ea", fontWeight: 1000 }}>
-              Globalizacion
-            </span>
+            <span style={{ color: "#a1a1a1", fontWeight: 1000 }}>La </span>
+            <span style={{ color: "#fff", fontWeight: 1000 }}>Entrevista</span>
           </Typography>
           <Typography
             variant="h2"
@@ -137,12 +149,12 @@ export const Globalizacion = () => {
             textAlign={"start"}
             sx={{
               width: { xs: "80vw", md: "60vw" },
-              color: "black",
+              color: "#fff",
               fontWeight: 400,
               mt: 2,
             }}
           >
-            Una nueva era
+            a un profesional en psicologia
           </Typography>
         </Box>
         <Box
@@ -158,7 +170,7 @@ export const Globalizacion = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 860, sm: 1000, md: 900, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -176,7 +188,7 @@ export const Globalizacion = () => {
                   alignItems: "center",
                 }}
               >
-                <TravelExploreIcon fontSize="large" sx={{ color: "white" }} />
+                <PsychologyIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -189,7 +201,7 @@ export const Globalizacion = () => {
                   mb: 2,
                 }}
               >
-                ¿Que es?
+                Explorando la Entrevista
               </Typography>
               <Typography
                 variant={"h5"}
@@ -201,17 +213,17 @@ export const Globalizacion = () => {
                   mb: 3,
                 }}
               >
-                La globalización se refiere a la creciente interconexión e
-                interdependencia de las economías, sociedades y culturas de todo
-                el mundo. Este fenómeno ha sido impulsado por avances en
-                tecnología de la información y comunicación, transporte,
-                comercio internacional y flujo de información.
+                En nuestra entrevista con la licenciada en psicología Cecilia
+                Elena Medina, de la institución Nodos, exploramos el impacto del
+                consumo de Tecnologías de la Información y Comunicación (TICs)
+                en los adolescentes de entre 13 a 18 años en la ciudad de Río
+                Cuarto.
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "90%", sm: "50%", md: "40%" } }}>
+          <Box sx={{ width: { xs: "80%", sm: "50%", md: "40%" } }}>
             <img
-              src="../../undraw_world_re_768g.svg"
+              src="../../undraw_solution_mindset_re_57bf.svg"
               className="wrong"
               alt="img"
             />
@@ -228,8 +240,8 @@ export const Globalizacion = () => {
             borderRadius: 10,
             gap: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 910, sm: 1000, md: 900, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            height: { xs: 1300, sm: 1000, md: 900, lg: 900 },
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -247,7 +259,7 @@ export const Globalizacion = () => {
                   alignItems: "center",
                 }}
               >
-                <LanguageIcon fontSize="large" sx={{ color: "white" }} />
+                <PsychologyAltIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -260,10 +272,10 @@ export const Globalizacion = () => {
                   mb: 3,
                 }}
               >
-                De que se trato?
+                ¿Que nos contó?
               </Typography>
               <Typography
-                variant={"h5"}
+                variant={"subtitle2"}
                 color={"white"}
                 textAlign={"start"}
                 sx={{
@@ -272,20 +284,82 @@ export const Globalizacion = () => {
                   fontWeight: 700,
                 }}
               >
-                La globalización es un fenómeno que ha transformado la forma en
-                que el mundo se conecta, comunica y opera. Este proceso de
-                interconexión global ha sido impulsado en gran medida por
-                avances tecnológicos, y uno de los aspectos más destacados de
-                esta globalización es la Cuarta Revolución Industrial.
+                <span style={{ color: "#000", fontWeight: "800px" }}>
+                  Efectos Psicológicos de las TICs en Adolescentes
+                </span>
+                <br />
+                El consumo frecuente de TICs afecta negativamente la autoestima
+                de los adolescentes, quienes comparan su popularidad en función
+                de likes y seguidores, lo que puede provocar ansiedad y
+                depresión.
+                <br />
+                <br />
+                <span style={{ color: "#000", fontWeight: "800px" }}>
+                  Factores de Influencia
+                </span>
+                <br />
+                Los adolescentes son influenciados principalmente por sus amigos
+                en línea, siguiendo tendencias digitales para mantenerse
+                actualizados y obtener aprobación.
+                <br />
+                <br />
+                <span style={{ color: "#000", fontWeight: "800px" }}>
+                  Manipulación en el Consumo de TICs
+                </span>
+                <br />
+                La manipulación es común en esta etapa, con adolescentes
+                copiando comportamientos y hábitos de sus pares en línea.
+                <br />
+                <br />
+                <span style={{ color: "#000", fontWeight: "800px" }}>
+                  Diferencias según Clase Social
+                </span>
+                <br />
+                La influencia de las TICs varía según la clase social, con
+                adolescentes de clase alta mostrando estatus, los de clase media
+                aspirando a ello y los de clase baja manteniendo un perfil bajo
+                debido a limitaciones económicas.
+                <br />
+                <br />
+                <span style={{ color: "#000", fontWeight: "800px" }}>
+
+                Papel del Factor Económico y Cultural <br />
+                </span>
+                El factor económico y cultural es fundamental, ya que aquellos
+                con más recursos pueden exhibir su estilo de vida, lo que puede
+                generar en otros la envidia y el deseo de emularlo.
               </Typography>
             </Box>
           </Box>
           <Box sx={{ width: { xs: "80%", sm: "50%", md: "35%" } }}>
             <img
-              src="../../undraw_the_world_is_mine_re_j5cr.svg"
+              src="../../undraw_meeting_re_i53h.svg"
               alt="img"
               className="wrong"
             />
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            direction: "row",
+            backgroundColor: "white",
+            borderRadius: 10,
+            gap: 10,
+            mt: 10,
+            width: { xs: "95vw", md: "70vw" },
+            height: { xs: 500, sm: 1000, md: 900, lg: 600 },
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <ChartModel />
+            </Box>
           </Box>
         </Box>
       </Container>

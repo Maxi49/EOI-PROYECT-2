@@ -270,7 +270,7 @@ export const Revolucion = () => {
             mb: 10,
             mt: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 860, sm: 1000, md: 700, lg: 790 },
+            height: { xs: 910, sm: 1000, md: 700, lg: 790 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -325,7 +325,7 @@ export const Revolucion = () => {
           </Box>
           <Box sx={{ width: { xs: "80%", sm: "40%", md: "40%" } }}>
             <img
-              src="../../public/undraw_successful_purchase_re_mpig.svg"
+              src="../../undraw_successful_purchase_re_mpig.svg"
               className="wrong"
               alt="img"
             />

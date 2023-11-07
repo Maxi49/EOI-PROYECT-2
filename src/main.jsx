@@ -9,6 +9,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Globalizacion } from './globalizacion/Globalizacion'
 import { Revolucion } from './globalizacion/Revolucion'
+import { Entrevista } from './entrevista/Entrevista'
+
 
 const lightTheme = createTheme({
   palette: {
@@ -26,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BoxesTwo/>
       <Globalizacion/>
       <Revolucion/>
+      <Entrevista/>
     </ThemeProvider>
   </React.StrictMode>,
 )
