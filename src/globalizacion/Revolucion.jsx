@@ -1,12 +1,11 @@
 import { Box, Container, ThemeProvider, createTheme } from "@mui/system";
 
 import { Typography } from "@mui/material";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import { DividedBoxesTic1 } from "../DividedBoxesTics/DividedBoxesTic1";
-import { DividedBoxesTic2 } from "../DividedBoxesTics/DividedBoxesTic2";
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
-export const BoxesTwo = () => {
+import BuildIcon from "@mui/icons-material/Build";
+import { DividedBoxesGlobal1 } from "../DividedBoxesGlobal/DividedBoxesGlobal1";
+import { DividedBoxesGlobal2 } from "../DividedBoxesGlobal/DividedBoxesGlobal2";
+export const Revolucion = () => {
   const theme = createTheme({
     typography: {
       h1: {
@@ -87,9 +86,22 @@ export const BoxesTwo = () => {
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
+      subtitle2: {
+        fontSize: "2rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "1.6rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "3rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "5rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
     },
   });
-  const boxRef = useColorChangeOnView("#fbe274");
+  const boxRef = useColorChangeOnView("#1b2228");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -100,13 +112,14 @@ export const BoxesTwo = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          mt: 10,
         }}
       >
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#fbe274", // Color original del componente Box
+            backgroundColor: "#1b2228", // Color original del componente Box
             width: { xs: "95vw", md: "70vw" },
             height: { xs: "300px", md: 600 },
             borderRadius: 10,
@@ -118,16 +131,19 @@ export const BoxesTwo = () => {
           component={"section"}
         >
           <Typography
-            variant={"h1"}
+            variant={"subtitle2"}
             color={"white"}
             textAlign={"start"}
             sx={{
               width: { xs: "80vw", md: "60vw" },
-              color: "black",
+              color: "white",
               fontWeight: 700,
             }}
           >
-            Las <span style={{ color: "#e99f30", fontWeight: 1000 }}>Tics</span>
+            La cuarta {" "}
+            <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
+              Revolucion Industrial
+            </span>
           </Typography>
           <Typography
             variant="h2"
@@ -135,12 +151,12 @@ export const BoxesTwo = () => {
             textAlign={"start"}
             sx={{
               width: { xs: "80vw", md: "60vw" },
-              color: "black",
+              color: "white",
               fontWeight: 400,
               mt: 2,
             }}
           >
-            ¿Como afectan nuestro dia a dia?
+            Un cambio rotundo
           </Typography>
         </Box>
         <Box
@@ -150,85 +166,12 @@ export const BoxesTwo = () => {
             alignItems: "center",
             display: "flex",
             direction: "row",
-            backgroundColor: "black",
+            backgroundColor: "#4eb2da",
             borderRadius: 10,
             gap: 2,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 930, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
-            <Box sx={{ width: "100%" }}>
-              <Box
-                sx={{
-                  padding: 1,
-                  marginBottom: 5,
-                  width: 50,
-                  height: 50,
-                  backgroundColor: "white",
-                  borderRadius: 100,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <QuestionMarkIcon fontSize="large" />
-              </Box>
-            </Box>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Typography
-                variant="h3"
-                sx={{
-                  width: { xs: "80vw", md: "30vw" },
-                  color: "White",
-                  fontWeight: 700,
-                }}
-              >
-                Que son
-              </Typography>
-              <Typography
-                variant={"h5"}
-                color={"white"}
-                textAlign={"start"}
-                sx={{
-                  width: { xs: "80vw", md: "20vw" },
-                  color: "#9b9b9b",
-                  fontWeight: 700,
-                }}
-              >
-                Las TICs se definen como un conjunto de tecnologías que
-                involucra computadoras, dispositivos móviles, sistemas de
-                información y redes sociales. Estas tecnologías se utilizan para
-                el procesamiento, transmisión y almacenamiento de información en
-                la sociedad moderna. Han revolucionado la comunicación, el
-                acceso a la información y la forma en que vivimos
-              </Typography>
-            </Box>
-          </Box>
-          <Box sx={{ width: { xs: "80%", sm: "50%", md: "40%" } }}>
-            <img
-              src="../../undraw_design_notes_re_eklr.svg"
-              className="wrong"
-              alt="img"
-            />
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            direction: "row",
-            backgroundColor: "white",
-            borderRadius: 10,
-            gap: 10,
-            mb: 10,
-            width: { xs: "95vw", md: "70vw" },
-            height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            height: { xs: 800, sm: 1000, md: 700, lg: 790 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -246,7 +189,7 @@ export const BoxesTwo = () => {
                   alignItems: "center",
                 }}
               >
-                <AccountBalanceIcon fontSize="large" sx={{ color: "white" }} />
+                <BuildIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -254,37 +197,35 @@ export const BoxesTwo = () => {
                 variant="h3"
                 sx={{
                   width: { xs: "80vw", md: "30vw" },
-                  color: "black",
+                  color: "#fff",
+                  fontWeight: 700,
+                  mb: 2,
+                }}
+              >
+                ¿Que fue?
+              </Typography>
+              <Typography
+                variant={"h5"}
+                textAlign={"start"}
+                sx={{
+                  width: { xs: "80vw", md: "20vw" },
+                  color: "rgba(255, 255, 255, .7)",
                   fontWeight: 700,
                   mb: 3,
                 }}
               >
-                Relacion con el{" "}
-                <span style={{ color: "#009FFF" }}>Mercado</span>
-              </Typography>
-              <Typography
-                variant={"h5"}
-                color={"white"}
-                textAlign={"start"}
-                sx={{
-                  width: { xs: "80vw", md: "20vw" },
-                  color: "#555555",
-                  fontWeight: 700,
-                }}
-              >
-                Las TICs han revolucionado el comercio, permitiendo a las
-                empresas llegar a consumidores globales en línea. Transacciones
-                electrónicas comunes y publicidad personalizada han transformado
-                la dinámica del mercado, impulsando la interconexión global en
-                la sociedad de consumo.
+                La Cuarta Revolución Industrial fue una etapa de avance
+                tecnológico que ha llevado a la convergencia de tecnologías
+                digitales, físicas y biológicas. Ha transformado la forma en que
+                vivimos, trabajamos y nos relacionamos. 
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "80%", sm: "50%", md: "35%" } }}>
+          <Box sx={{ width: { xs: "80%", sm: "40%", md: "30%" } }}>
             <img
-              src="../../undraw_stock_prices_re_js33 (1).svg"
-              alt="img"
+              src="../../undraw_firmware_re_fgdy.svg"
               className="wrong"
+              alt="img"
             />
           </Box>
         </Box>
@@ -296,8 +237,8 @@ export const BoxesTwo = () => {
             gap: 2,
           }}
         >
-          <DividedBoxesTic1 />
-          <DividedBoxesTic2 />
+          <DividedBoxesGlobal1 />
+          <DividedBoxesGlobal2/>
         </Box>
       </Container>
     </ThemeProvider>

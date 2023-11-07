@@ -1,6 +1,6 @@
 import { ThemeProvider, Typography, createTheme } from "@mui/material";
 import { Box } from "@mui/system";
-export const DividedBoxesTic1 = () => {
+export const DividedBoxesGlobal1 = () => {
   const theme = createTheme({
     typography: {
       h1: {
@@ -30,7 +30,7 @@ export const DividedBoxesTic1 = () => {
         fontFamily: "Roboto, Arial, sans-serif",
       },
       h3: {
-        fontSize: "3.4rem",
+        fontSize: "2.5rem",
         ["@media (min-width:600px)"]: {
           fontSize: "1.6rem",
         },
@@ -70,8 +70,8 @@ export const DividedBoxesTic1 = () => {
           borderRadius: 10,
           gap: 10,
           width: { xs: "95vw", md: "35vw" },
-          height: { xs: 500, sm: 300, md: 700, lg: 600 },
-          boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+          height: { xs: 650, sm: 300, md: 700, lg: 600 },
+          boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
         }}
       >
         <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -82,12 +82,13 @@ export const DividedBoxesTic1 = () => {
                 width: { xs: "80vw", md: "30vw" },
                 color: "White",
                 fontWeight: 700,
+                mb: 2,
               }}
             >
-              Compra
+              Esta trajo
             </Typography>
             <Typography
-              variant={"h5"}
+              variant={"subtitle1"}
               color={"white"}
               textAlign={"start"}
               sx={{
@@ -96,9 +97,28 @@ export const DividedBoxesTic1 = () => {
                 fontWeight: 700,
               }}
             >
-              Las TICs han simplificado la compra con transacciones electrónicas
-              comunes, brindando comodidad a los consumidores al comprar en
-              línea.
+              <ul>
+                <li>
+                  <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
+                    Tecnologías Disruptivas
+                  </span>
+                  <br />
+                  La adopción de tecnologías como la inteligencia artificial,
+                  automatización, robótica, impresión 3D y realidad virtual ha
+                  transformado cómo las empresas operan y cómo las personas
+                  realizan sus actividades diarias.
+                </li>
+                <br />
+                <li>
+                  <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
+                    Conectividad Global
+                  </span>
+                  <br />
+                  La expansión de Internet y las redes de comunicación ha
+                  permitido una comunicación global instantánea,
+                  independientemente de la ubicación geográfica.
+                </li>
+              </ul>
             </Typography>
           </Box>
         </Box>

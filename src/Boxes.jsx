@@ -92,6 +92,7 @@ export const Boxes = () => {
             justifyContent: "center",
             textAlign: "start",
             alignItems: "center",
+
           }}
           component={"section"}
         >
@@ -138,6 +139,7 @@ export const Boxes = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 930, sm: 1000, md: 700, lg: 900 },
+            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -227,6 +229,7 @@ export const Boxes = () => {
             mb: 5,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -304,6 +307,7 @@ export const Boxes = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 950, sm: 1000, md: 700, lg: 900 },
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>

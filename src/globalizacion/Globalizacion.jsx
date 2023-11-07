@@ -1,12 +1,10 @@
 import { Box, Container, ThemeProvider, createTheme } from "@mui/system";
 
 import { Typography } from "@mui/material";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import { DividedBoxesTic1 } from "../DividedBoxesTics/DividedBoxesTic1";
-import { DividedBoxesTic2 } from "../DividedBoxesTics/DividedBoxesTic2";
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
-export const BoxesTwo = () => {
+import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+import LanguageIcon from "@mui/icons-material/Language";
+export const Globalizacion = () => {
   const theme = createTheme({
     typography: {
       h1: {
@@ -89,7 +87,7 @@ export const BoxesTwo = () => {
       },
     },
   });
-  const boxRef = useColorChangeOnView("#fbe274");
+  const boxRef = useColorChangeOnView("#bec7e7");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -100,13 +98,14 @@ export const BoxesTwo = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          mt: 10,
         }}
       >
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#fbe274", // Color original del componente Box
+            backgroundColor: "#bec7e7", // Color original del componente Box
             width: { xs: "95vw", md: "70vw" },
             height: { xs: "300px", md: 600 },
             borderRadius: 10,
@@ -127,7 +126,10 @@ export const BoxesTwo = () => {
               fontWeight: 700,
             }}
           >
-            Las <span style={{ color: "#e99f30", fontWeight: 1000 }}>Tics</span>
+            La{" "}
+            <span style={{ color: "#6d59ea", fontWeight: 1000 }}>
+              Globalizacion
+            </span>
           </Typography>
           <Typography
             variant="h2"
@@ -140,7 +142,7 @@ export const BoxesTwo = () => {
               mt: 2,
             }}
           >
-            ¿Como afectan nuestro dia a dia?
+            Una nueva era
           </Typography>
         </Box>
         <Box
@@ -150,84 +152,12 @@ export const BoxesTwo = () => {
             alignItems: "center",
             display: "flex",
             direction: "row",
-            backgroundColor: "black",
+            backgroundColor: "#6d59ea",
             borderRadius: 10,
             gap: 2,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 930, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
-            <Box sx={{ width: "100%" }}>
-              <Box
-                sx={{
-                  padding: 1,
-                  marginBottom: 5,
-                  width: 50,
-                  height: 50,
-                  backgroundColor: "white",
-                  borderRadius: 100,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <QuestionMarkIcon fontSize="large" />
-              </Box>
-            </Box>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Typography
-                variant="h3"
-                sx={{
-                  width: { xs: "80vw", md: "30vw" },
-                  color: "White",
-                  fontWeight: 700,
-                }}
-              >
-                Que son
-              </Typography>
-              <Typography
-                variant={"h5"}
-                color={"white"}
-                textAlign={"start"}
-                sx={{
-                  width: { xs: "80vw", md: "20vw" },
-                  color: "#9b9b9b",
-                  fontWeight: 700,
-                }}
-              >
-                Las TICs se definen como un conjunto de tecnologías que
-                involucra computadoras, dispositivos móviles, sistemas de
-                información y redes sociales. Estas tecnologías se utilizan para
-                el procesamiento, transmisión y almacenamiento de información en
-                la sociedad moderna. Han revolucionado la comunicación, el
-                acceso a la información y la forma en que vivimos
-              </Typography>
-            </Box>
-          </Box>
-          <Box sx={{ width: { xs: "80%", sm: "50%", md: "40%" } }}>
-            <img
-              src="../../undraw_design_notes_re_eklr.svg"
-              className="wrong"
-              alt="img"
-            />
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            direction: "row",
-            backgroundColor: "white",
-            borderRadius: 10,
-            gap: 10,
-            mb: 10,
-            width: { xs: "95vw", md: "70vw" },
-            height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
+            height: { xs: 860, sm: 1000, md: 700, lg: 900 },
             boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
           }}
         >
@@ -246,7 +176,79 @@ export const BoxesTwo = () => {
                   alignItems: "center",
                 }}
               >
-                <AccountBalanceIcon fontSize="large" sx={{ color: "white" }} />
+                <TravelExploreIcon fontSize="large" sx={{ color: "white" }} />
+              </Box>
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Typography
+                variant="h3"
+                sx={{
+                  width: { xs: "80vw", md: "30vw" },
+                  color: "#fff",
+                  fontWeight: 700,
+                  mb: 2,
+                }}
+              >
+                ¿Que es?
+              </Typography>
+              <Typography
+                variant={"h5"}
+                textAlign={"start"}
+                sx={{
+                  width: { xs: "80vw", md: "20vw" },
+                  color: "rgba(255, 255, 255, .7)",
+                  fontWeight: 700,
+                  mb: 3,
+                }}
+              >
+                La globalización se refiere a la creciente interconexión e
+                interdependencia de las economías, sociedades y culturas de todo
+                el mundo. Este fenómeno ha sido impulsado por avances en
+                tecnología de la información y comunicación, transporte,
+                comercio internacional y flujo de información.
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ width: { xs: "90%", sm: "50%", md: "40%" } }}>
+            <img
+              src="../../undraw_world_re_768g.svg"
+              className="wrong"
+              alt="img"
+            />
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            direction: "row",
+            backgroundColor: "white",
+            borderRadius: 10,
+            gap: 10,
+            mb: 10,
+            width: { xs: "95vw", md: "70vw" },
+            height: { xs: 910, sm: 1000, md: 700, lg: 900 },
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
+            <Box sx={{ width: "100%" }}>
+              <Box
+                sx={{
+                  padding: 1,
+                  marginBottom: 5,
+                  width: { xs: 60, md: 70 },
+                  height: { xs: 60, md: 70 },
+                  backgroundColor: "black",
+                  borderRadius: 100,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <LanguageIcon fontSize="large" sx={{ color: "white" }} />
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -259,8 +261,7 @@ export const BoxesTwo = () => {
                   mb: 3,
                 }}
               >
-                Relacion con el{" "}
-                <span style={{ color: "#009FFF" }}>Mercado</span>
+                De que se trato?
               </Typography>
               <Typography
                 variant={"h5"}
@@ -272,32 +273,21 @@ export const BoxesTwo = () => {
                   fontWeight: 700,
                 }}
               >
-                Las TICs han revolucionado el comercio, permitiendo a las
-                empresas llegar a consumidores globales en línea. Transacciones
-                electrónicas comunes y publicidad personalizada han transformado
-                la dinámica del mercado, impulsando la interconexión global en
-                la sociedad de consumo.
+                La globalización es un fenómeno que ha transformado la forma en
+                que el mundo se conecta, comunica y opera. Este proceso de
+                interconexión global ha sido impulsado en gran medida por
+                avances tecnológicos, y uno de los aspectos más destacados de
+                esta globalización es la Cuarta Revolución Industrial.
               </Typography>
             </Box>
           </Box>
           <Box sx={{ width: { xs: "80%", sm: "50%", md: "35%" } }}>
             <img
-              src="../../undraw_stock_prices_re_js33 (1).svg"
+              src="../../undraw_the_world_is_mine_re_j5cr.svg"
               alt="img"
               className="wrong"
             />
           </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: "space-evenly",
-            gap: 2,
-          }}
-        >
-          <DividedBoxesTic1 />
-          <DividedBoxesTic2 />
         </Box>
       </Container>
     </ThemeProvider>

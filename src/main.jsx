@@ -7,6 +7,8 @@ import { Header } from './Header'
 import { BoxesTwo } from './secondBox/BoxesTwo'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Globalizacion } from './globalizacion/Globalizacion'
+import { Revolucion } from './globalizacion/Revolucion'
 
 const lightTheme = createTheme({
   palette: {
@@ -22,6 +24,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Start/>
       <Boxes/>
       <BoxesTwo/>
+      <Globalizacion/>
+      <Revolucion/>
     </ThemeProvider>
   </React.StrictMode>,
 )
