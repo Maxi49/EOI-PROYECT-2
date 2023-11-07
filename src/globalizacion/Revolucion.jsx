@@ -5,6 +5,7 @@ import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import BuildIcon from "@mui/icons-material/Build";
 import { DividedBoxesGlobal1 } from "../DividedBoxesGlobal/DividedBoxesGlobal1";
 import { DividedBoxesGlobal2 } from "../DividedBoxesGlobal/DividedBoxesGlobal2";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export const Revolucion = () => {
   const theme = createTheme({
     typography: {
@@ -86,6 +87,19 @@ export const Revolucion = () => {
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
+      subtitle1: {
+        fontSize: "1rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "1rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "1rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "1.3rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
       subtitle2: {
         fontSize: "2rem",
         ["@media (min-width:600px)"]: {
@@ -140,7 +154,7 @@ export const Revolucion = () => {
               fontWeight: 700,
             }}
           >
-            La cuarta {" "}
+            La cuarta{" "}
             <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
               Revolucion Industrial
             </span>
@@ -217,7 +231,7 @@ export const Revolucion = () => {
                 La Cuarta Revolución Industrial fue una etapa de avance
                 tecnológico que ha llevado a la convergencia de tecnologías
                 digitales, físicas y biológicas. Ha transformado la forma en que
-                vivimos, trabajamos y nos relacionamos. 
+                vivimos, trabajamos y nos relacionamos.
               </Typography>
             </Box>
           </Box>
@@ -238,7 +252,84 @@ export const Revolucion = () => {
           }}
         >
           <DividedBoxesGlobal1 />
-          <DividedBoxesGlobal2/>
+          <DividedBoxesGlobal2 />
+        </Box>
+
+        {/*  */}
+
+        <Box
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            direction: "row",
+            backgroundColor: "#ff4949",
+            borderRadius: 10,
+            gap: 2,
+            mb: 10,
+            mt: 10,
+            width: { xs: "95vw", md: "70vw" },
+            height: { xs: 860, sm: 1000, md: 700, lg: 790 },
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
+            <Box sx={{ width: "100%" }}>
+              <Box
+                sx={{
+                  padding: 1,
+                  marginBottom: 5,
+                  width: { xs: 60, md: 70 },
+                  height: { xs: 60, md: 70 },
+                  backgroundColor: "black",
+                  borderRadius: 100,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <ShoppingCartIcon fontSize="large" sx={{ color: "white" }} />
+              </Box>
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Typography
+                variant="h3"
+                sx={{
+                  width: { xs: "80vw", md: "30vw" },
+                  color: "#fff",
+                  fontWeight: 700,
+                  mb: 2,
+                }}
+              >
+                Su Influencia en el Consumismo
+              </Typography>
+              <Typography
+                variant={"subtitle1"}
+                textAlign={"start"}
+                sx={{
+                  width: { xs: "80vw", md: "20vw" },
+                  color: "rgba(255, 255, 255, .7)",
+                  fontWeight: 700,
+                  mb: 3,
+                }}
+              >
+                Uno de los aspectos notables de la Cuarta Revolución Industrial
+                es cómo ha influido en el consumismo. Las redes sociales y las
+                plataformas en línea han facilitado la publicidad personalizada
+                y la promoción de productos. Los consumidores están
+                constantemente expuestos a anuncios y contenido relacionado con
+                productos, lo que puede influir en sus decisiones de compra y
+                llevar a compras impulsivas.
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ width: { xs: "80%", sm: "40%", md: "40%" } }}>
+            <img
+              src="../../public/undraw_successful_purchase_re_mpig.svg"
+              className="wrong"
+              alt="img"
+            />
+          </Box>
         </Box>
       </Container>
     </ThemeProvider>

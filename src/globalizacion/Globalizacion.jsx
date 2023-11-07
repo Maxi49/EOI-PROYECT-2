@@ -227,7 +227,6 @@ export const Globalizacion = () => {
             backgroundColor: "white",
             borderRadius: 10,
             gap: 10,
-            mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 910, sm: 1000, md: 700, lg: 900 },
             boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
