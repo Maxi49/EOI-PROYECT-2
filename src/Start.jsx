@@ -1,4 +1,5 @@
-import { Button, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { deepPurple } from "@mui/material/colors";
 import { Box, Container } from "@mui/system";
 import { useColorChangeOnView } from "./hook/useColorChangeOnView";

@@ -1,10 +1,8 @@
-import { Box, Container, ThemeProvider, createTheme } from "@mui/system";
-
-import { Typography } from "@mui/material";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
-import ChartModel from "./ChartModel";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+import { Box, Container, Typography } from '@mui/material';
 export const Entrevista = () => {
   const theme = createTheme({
     typography: {
@@ -337,29 +335,6 @@ export const Entrevista = () => {
               alt="img"
               className="wrong"
             />
-          </Box>
-        </Box>
-
-        <Box
-          sx={{
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            direction: "row",
-            backgroundColor: "white",
-            borderRadius: 10,
-            gap: 10,
-            mt: 10,
-            width: { xs: "95vw", md: "70vw" },
-            height: { xs: 500, sm: 1000, md: 900, lg: 600 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <ChartModel />
-            </Box>
           </Box>
         </Box>
       </Container>

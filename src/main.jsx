@@ -10,7 +10,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Globalizacion } from './globalizacion/Globalizacion'
 import { Revolucion } from './globalizacion/Revolucion'
 import { Entrevista } from './entrevista/Entrevista'
-
+import { Estadistica } from './entrevista/Estadistica'
 
 const lightTheme = createTheme({
   palette: {
@@ -29,6 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Globalizacion/>
       <Revolucion/>
       <Entrevista/>
+      <Estadistica/>
     </ThemeProvider>
   </React.StrictMode>,
 )

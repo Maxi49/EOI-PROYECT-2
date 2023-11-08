@@ -43,6 +43,19 @@ export const DividedBoxes2 = () => {
         fontFamily: "Roboto, Arial, sans-serif",
       },
       h4: {
+        fontSize: "2.2rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "1.6rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "1.5rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "3rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
+      h5: {
         fontSize: "2rem",
         ["@media (min-width:600px)"]: {
           fontSize: "1.6rem",
@@ -51,7 +64,7 @@ export const DividedBoxes2 = () => {
           fontSize: "1.5rem",
         },
         ["@media (min-width:1280px)"]: {
-          fontSize: "2rem",
+          fontSize: "2.3rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
@@ -78,7 +91,7 @@ export const DividedBoxes2 = () => {
           <Box sx={{ display: "flex", flexDirection:{xs:'column'}}}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Typography
-                variant="h3"
+                variant="h4"
                 sx={{
                   width: { xs: "80vw", md: "30vw" },
                   color: "#000",
@@ -88,7 +101,7 @@ export const DividedBoxes2 = () => {
                 Consumismo
               </Typography>
               <Typography
-                variant={"h4"}
+                variant={"h5"}
                 color={"white"}
                 textAlign={"start"}
                 sx={{

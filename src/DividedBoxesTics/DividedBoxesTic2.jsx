@@ -1,5 +1,6 @@
-import { ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 export const DividedBoxesTic2 = () => {
   const theme = createTheme({
     typography: {

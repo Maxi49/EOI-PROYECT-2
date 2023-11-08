@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import { ThemeProvider, createTheme } from "@mui/material";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./styles.css";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { DividedBoxes1 } from "../src/DividedBoxes/DividedBoxes1";
@@ -265,7 +265,7 @@ export const Boxes = () => {
                 </span>
               </Typography>
               <Typography
-                variant={"h6"}
+                variant={"h4"}
                 color={"white"}
                 textAlign={"start"}
                 sx={{
@@ -341,7 +341,7 @@ export const Boxes = () => {
                 <span style={{ color: "#b90000" }}>consumismo</span>
               </Typography>
               <Typography
-                variant={"h5"}
+                variant={"h4"}
                 color={"white"}
                 textAlign={"start"}
                 sx={{

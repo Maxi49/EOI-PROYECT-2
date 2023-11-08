@@ -70,14 +70,14 @@ export const DividedBoxesGlobal1 = () => {
           borderRadius: 10,
           gap: 10,
           width: { xs: "95vw", md: "35vw" },
-          height: { xs: 650, sm: 300, md: 700, lg: 600 },
+          height: { xs: 700, sm: 300, md: 700, lg: 700 },
           boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
         }}
       >
         <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography
-              variant="h3"
+              variant="h4"
               sx={{
                 width: { xs: "80vw", md: "30vw" },
                 color: "White",
