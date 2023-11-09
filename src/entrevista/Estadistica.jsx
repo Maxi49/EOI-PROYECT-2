@@ -7,6 +7,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
 import { Container } from '@mui/system';
 export const Estadistica = () => {
+  const boxRef = useColorChangeOnView("#F26F23");
   const theme = createTheme({
     typography: {
       h1: {
@@ -102,7 +103,6 @@ export const Estadistica = () => {
       },
     },
   });
-  const boxRef = useColorChangeOnView("#F26F23");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -114,6 +114,7 @@ export const Estadistica = () => {
           justifyContent: "center",
           alignItems: "center",
           mt: 10,
+          mb:100
         }}
       >
         <Box
@@ -171,7 +172,7 @@ export const Estadistica = () => {
             mb: 10,
             mt:5,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 600, sm: 1000, md: 700, lg: 900 },
+            height: { xs: 600, sm: 650, md: 700, lg: 900 },
             boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
           }}
         >
@@ -209,7 +210,7 @@ export const Estadistica = () => {
             gap: 10,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 700, sm: 1000, md: 700, lg: 900 },
+            height: { xs: 700, sm: 700, md: 800, lg: 900 },
             boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
           }}
         >

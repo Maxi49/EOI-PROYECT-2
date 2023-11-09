@@ -5,6 +5,8 @@ import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import LanguageIcon from "@mui/icons-material/Language";
 export const Globalizacion = () => {
+  const boxRef = useColorChangeOnView("#bec7e7");
+
   const theme = createTheme({
     typography: {
       h1: {
@@ -87,7 +89,6 @@ export const Globalizacion = () => {
       },
     },
   });
-  const boxRef = useColorChangeOnView("#bec7e7");
   return (
     <ThemeProvider theme={theme}>
       <Container

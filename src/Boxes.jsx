@@ -286,7 +286,7 @@ export const Boxes = () => {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "50%", sm: "50%", md: "30%" } }}>
+          <Box sx={{ width: { xs: "50%", sm: "30%", md: "30%" } }}>
             <img
               src="../undraw_completed_m9ci.svg"
               alt="img"

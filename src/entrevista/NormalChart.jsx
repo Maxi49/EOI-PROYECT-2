@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box} from "@mui/system";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import PropTypes from 'prop-types';
 
 
 
@@ -17,7 +18,7 @@ const theme = createTheme({
         fontSize: "2.4rem",
       },
       ["@media (min-width:960px)"]: {
-        fontSize: "3.4rem",
+        fontSize: "3rem",
       },
       ["@media (min-width:1280px)"]: {
         fontSize: "6rem",
@@ -27,10 +28,10 @@ const theme = createTheme({
     h2: {
       fontSize: "1.8rem",
       ["@media (min-width:600px)"]: {
-        fontSize: "1.6rem",
+        fontSize: "2rem",
       },
       ["@media (min-width:960px)"]: {
-        fontSize: "2.2rem",
+        fontSize: "2rem",
       },
       ["@media (min-width:1280px)"]: {
         fontSize: "4rem",
@@ -125,7 +126,7 @@ const Barra = ({ nombre, porcentaje }) => (
       width: { xs: "80vw", md: "60vw" },
       maxWidth: "90vw",
       mb: 3,
-      height: { xs: 50, md: 70 },
+      height: { xs: 50, md: 60 },
       backgroundColor: backGroundColor,
       position: "relative",
       borderRadius: 25,
@@ -204,5 +205,11 @@ export function TiempoUsoChart() {
     </ThemeProvider>
   );
 }
-
+Barra.propTypes = {
+  nombre: PropTypes.string.isRequired,
+  porcentaje: PropTypes.number.isRequired,
+};
+Barras.propTypes = {
+  datos:PropTypes.object.isRequired,
+};
 /* */

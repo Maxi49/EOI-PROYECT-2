@@ -1,18 +1,13 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { deepPurple } from "@mui/material/colors";
 import { Box, Container } from "@mui/system";
 import { useColorChangeOnView } from "./hook/useColorChangeOnView";
 
 
+
 const typo = createTheme();
-const buttonTheme = createTheme({
-  palette: {
-    primary: {
-      main: deepPurple["A400"],
-    },
-  },
-});
+
 typo.typography.h2 = {
   fontSize: "2.4rem",
   [typo.breakpoints.up("sm")]: {
@@ -77,22 +72,12 @@ export const Start = () => {
             mb={3}
             sx={{ textAlign: "center", color: "white" }}
           >
-            El consumo de las redes sociales
+            El <span style={{color:deepPurple["A400"]}}>consumo</span> de las <span style={{color:deepPurple["A400"]}} >redes sociales</span>
           </Typography>
           <Typography variant="h6" sx={{ textAlign: "center", color: "white" }}>
             ¿Porque nos afecta tanto?
           </Typography>
         </Box>
-        <ThemeProvider theme={buttonTheme}>
-          <Box>
-            <Button
-              variant="contained"
-              sx={{ width: "40vw", borderRadius: 90 }}
-            >
-              <Typography>Comenzar</Typography>
-            </Button>
-          </Box>
-        </ThemeProvider>
         <Box
           component={"section"}
           sx={{

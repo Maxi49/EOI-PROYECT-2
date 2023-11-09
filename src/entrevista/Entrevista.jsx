@@ -3,7 +3,9 @@ import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
 import { Box, Container, Typography } from '@mui/material';
+
 export const Entrevista = () => {
+  const boxRef = useColorChangeOnView("#000");
   const theme = createTheme({
     typography: {
       h1: {
@@ -41,7 +43,10 @@ export const Entrevista = () => {
           fontSize: "2rem",
         },
         ["@media (min-width:1280px)"]: {
-          fontSize: "4rem",
+          fontSize: "2.8rem",
+        },
+        ["@media (min-width:1440px)"]: {
+          fontSize: "3rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
@@ -87,19 +92,21 @@ export const Entrevista = () => {
       subtitle2: {
         fontSize: "0.9rem",
         ["@media (min-width:600px)"]: {
-          fontSize: "0.7rem",
+          fontSize: "1rem",
         },
         ["@media (min-width:960px)"]: {
-          fontSize: "0.75rem",
+          fontSize: "0.86rem",
         },
         ["@media (min-width:1280px)"]: {
-          fontSize: "0.85rem",
+          fontSize: "0.9rem",
+        },
+        ["@media (min-width:1440px)"]: {
+          fontSize: "1rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
     },
   });
-  const boxRef = useColorChangeOnView("#000");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -110,7 +117,6 @@ export const Entrevista = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          mt: 10,
         }}
       >
         <Box
@@ -167,7 +173,7 @@ export const Entrevista = () => {
             gap: 2,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 860, sm: 1000, md: 900, lg: 900 },
+            height: { xs: 860, sm: 800, md: 900, lg: 900 },
             boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
@@ -238,7 +244,7 @@ export const Entrevista = () => {
             borderRadius: 10,
             gap: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 1300, sm: 1000, md: 900, lg: 900 },
+            height: { xs: 1300, sm: 1200, md: 1200, lg: 1200 },
             boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >

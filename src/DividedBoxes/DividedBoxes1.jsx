@@ -58,7 +58,7 @@ export const DividedBoxes1 = () => {
         fontFamily: "Roboto, Arial, sans-serif",
       },
       h5: {
-        fontSize: "2rem",
+        fontSize: "1.8rem",
         ["@media (min-width:600px)"]: {
           fontSize: "1.6rem",
         },
@@ -66,6 +66,9 @@ export const DividedBoxes1 = () => {
           fontSize: "1.5rem",
         },
         ["@media (min-width:1280px)"]: {
+          fontSize: "2.3rem",
+        },
+        ["@media (min-width:1680px)"]: {
           fontSize: "2.3rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
@@ -86,7 +89,7 @@ export const DividedBoxes1 = () => {
             borderRadius: 10,
             gap: 10,
             width: { xs: "95vw", md: "35vw" },
-            height: { xs:500, sm:300, md: 700, lg:600 },
+            height: { xs:500, sm:300, md: 450, lg:600,xl:700},
             boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
           }}
         >

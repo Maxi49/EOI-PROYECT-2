@@ -27,7 +27,6 @@ export const Header = () => {
         </Typography>
       </Box>
       <Typography variant="h5" sx={{color:'white'}}>
-          Data
       </Typography>
     </Box>
   );

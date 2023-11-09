@@ -30,8 +30,11 @@ export const BoxesTwo = () => {
         ["@media (min-width:960px)"]: {
           fontSize: "2.2rem",
         },
-        ["@media (min-width:1280px)"]: {
-          fontSize: "4rem",
+        ["@media (min-width:1100px)"]: {
+          fontSize: "2rem",
+        },
+        ["@media (min-width:1300px)"]: {
+          fontSize: "3rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
@@ -67,10 +70,13 @@ export const BoxesTwo = () => {
           fontSize: "1.6rem",
         },
         ["@media (min-width:960px)"]: {
-          fontSize: "1.5rem",
+          fontSize: "1rem",
         },
-        ["@media (min-width:1280px)"]: {
-          fontSize: "1.7rem",
+        ["@media (min-width:1100px)"]: {
+          fontSize: "1.1rem",
+        },
+        ["@media (min-width:1300px)"]: {
+          fontSize: "1.6rem",
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },

@@ -71,7 +71,7 @@ export const DividedBoxesTic1 = () => {
           borderRadius: 10,
           gap: 10,
           width: { xs: "95vw", md: "35vw" },
-          height: { xs: 500, sm: 300, md: 700, lg: 600 },
+          height: { xs: 500, sm: 300, md: 450, lg: 600 },
           boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
         }}
       >

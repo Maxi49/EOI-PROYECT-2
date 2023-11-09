@@ -7,6 +7,8 @@ import { DividedBoxesGlobal1 } from "../DividedBoxesGlobal/DividedBoxesGlobal1";
 import { DividedBoxesGlobal2 } from "../DividedBoxesGlobal/DividedBoxesGlobal2";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export const Revolucion = () => {
+  const boxRef = useColorChangeOnView("#1b2228");
+
   const theme = createTheme({
     typography: {
       h1: {
@@ -103,7 +105,7 @@ export const Revolucion = () => {
       subtitle2: {
         fontSize: "2rem",
         ["@media (min-width:600px)"]: {
-          fontSize: "1.6rem",
+          fontSize: "2.2rem",
         },
         ["@media (min-width:960px)"]: {
           fontSize: "3rem",
@@ -115,7 +117,6 @@ export const Revolucion = () => {
       },
     },
   });
-  const boxRef = useColorChangeOnView("#1b2228");
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -185,7 +186,7 @@ export const Revolucion = () => {
             gap: 2,
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 800, sm: 1000, md: 700, lg: 790 },
+            height: { xs: 800, sm: 760, md: 700, lg: 790 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -270,7 +271,7 @@ export const Revolucion = () => {
             mb: 10,
             mt: 10,
             width: { xs: "95vw", md: "70vw" },
-            height: { xs: 910, sm: 1000, md: 700, lg: 790 },
+            height: { xs: 910, sm: 750, md: 700, lg: 790 },
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -310,7 +311,6 @@ export const Revolucion = () => {
                   width: { xs: "80vw", md: "20vw" },
                   color: "rgba(255, 255, 255, .7)",
                   fontWeight: 700,
-                  mb: 3,
                 }}
               >
                 Uno de los aspectos notables de la Cuarta Revolución Industrial

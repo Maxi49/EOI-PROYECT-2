@@ -55,6 +55,19 @@ export const DividedBoxesGlobal1 = () => {
         },
         fontFamily: "Roboto, Arial, sans-serif",
       },
+      subtitle1: {
+        fontSize: "1rem",
+        ["@media (min-width:600px)"]: {
+          fontSize: "1.2rem",
+        },
+        ["@media (min-width:960px)"]: {
+          fontSize: "0.95rem",
+        },
+        ["@media (min-width:1280px)"]: {
+          fontSize: "1.2rem",
+        },
+        fontFamily: "Roboto, Arial, sans-serif",
+      },
     },
   });
   return (
@@ -70,7 +83,7 @@ export const DividedBoxesGlobal1 = () => {
           borderRadius: 10,
           gap: 10,
           width: { xs: "95vw", md: "35vw" },
-          height: { xs: 700, sm: 300, md: 700, lg: 700 },
+          height: { xs: 700, sm: 600, md: 700, lg: 700 },
           boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
         }}
       >
