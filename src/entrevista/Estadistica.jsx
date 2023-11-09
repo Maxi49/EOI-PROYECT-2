@@ -1,13 +1,13 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import { RedesSocialesChart, TiempoUsoChart } from "./NormalChart";
 import { Box, Typography } from "@mui/material";
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
-import { Container } from '@mui/system';
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
+import { Container } from "@mui/system";
 export const Estadistica = () => {
-  const boxRef = useColorChangeOnView("#F26F23");
+  const boxRef = useColorChangeOnView("#5a189a");
   const theme = createTheme({
     typography: {
       h1: {
@@ -114,14 +114,14 @@ export const Estadistica = () => {
           justifyContent: "center",
           alignItems: "center",
           mt: 10,
-          mb:100
+          mb: 100,
         }}
       >
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#F26F23", // Color original del componente Box
+            backgroundColor: "#5a189a", // Color original del componente Box
             width: { xs: "95vw", md: "70vw" },
             height: { xs: "300px", md: 600 },
             borderRadius: 10,
@@ -141,8 +141,8 @@ export const Estadistica = () => {
               fontWeight: 700,
             }}
           >
-            <span style={{ color: "Black", fontWeight: 1000 }}>
-              Estadisticas y Datos
+            <span style={{ color: "ebebeb", fontWeight: 1000 }}>
+              Estadísticas y Datos
             </span>
           </Typography>
           <Typography
@@ -156,7 +156,7 @@ export const Estadistica = () => {
               mt: 2,
             }}
           >
-            Obtenidos desde una encuesta
+            Obtenidos desde nuestra encuesta
           </Typography>
         </Box>
         <Box
@@ -170,10 +170,10 @@ export const Estadistica = () => {
             borderRadius: 10,
             gap: 10,
             mb: 10,
-            mt:5,
+            mt: 5,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 600, sm: 650, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
+            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -194,7 +194,7 @@ export const Estadistica = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              < RedesSocialesChart/>
+              <RedesSocialesChart />
             </Box>
           </Box>
         </Box>
@@ -211,7 +211,7 @@ export const Estadistica = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 700, sm: 700, md: 800, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
+            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -232,7 +232,7 @@ export const Estadistica = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              < TiempoUsoChart/>
+              <TiempoUsoChart />
             </Box>
           </Box>
         </Box>

@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 export const DividedBoxesTic1 = () => {
   const theme = createTheme({
@@ -72,7 +72,7 @@ export const DividedBoxesTic1 = () => {
           gap: 10,
           width: { xs: "95vw", md: "35vw" },
           height: { xs: 500, sm: 300, md: 450, lg: 600 },
-          boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+          boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
         }}
       >
         <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>

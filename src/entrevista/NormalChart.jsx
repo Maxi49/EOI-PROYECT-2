@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#F26F23",
+      main: "#5a189a",
     },
   },
   typography: {
@@ -130,7 +130,8 @@ const Barra = ({ nombre, porcentaje }) => (
       backgroundColor: backGroundColor,
       position: "relative",
       borderRadius: 25,
-      boxShadow: '0px 0px 12px 2px rgba(255, 255, 255, 0.6)'
+      border:'1px solid white',
+      boxShadow: '0px 0px 8px 2px rgba(255, 255, 255, 0.6)'
     }}
   >
     <Box

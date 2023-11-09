@@ -90,17 +90,6 @@ export const DividedBoxesGlobal2 = () => {
         <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography
-              variant="h4"
-              sx={{
-                width: { xs: "80vw", md: "30vw" },
-                color: "White",
-                fontWeight: 700,
-                mb: 2,
-              }}
-            >
-              Y tambien
-            </Typography>
-            <Typography
               variant={"subtitle1"}
               color={"white"}
               textAlign={"start"}

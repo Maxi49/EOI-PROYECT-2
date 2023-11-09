@@ -5,7 +5,7 @@ import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import BuildIcon from "@mui/icons-material/Build";
 import { DividedBoxesGlobal1 } from "../DividedBoxesGlobal/DividedBoxesGlobal1";
 import { DividedBoxesGlobal2 } from "../DividedBoxesGlobal/DividedBoxesGlobal2";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 export const Revolucion = () => {
   const boxRef = useColorChangeOnView("#1b2228");
 
@@ -157,7 +157,7 @@ export const Revolucion = () => {
           >
             La cuarta{" "}
             <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
-              Revolucion Industrial
+              Revolución Industrial
             </span>
           </Typography>
           <Typography
@@ -217,7 +217,7 @@ export const Revolucion = () => {
                   mb: 2,
                 }}
               >
-                ¿Que fue?
+                ¿Qué fue?
               </Typography>
               <Typography
                 variant={"h5"}
@@ -232,7 +232,7 @@ export const Revolucion = () => {
                 La Cuarta Revolución Industrial fue una etapa de avance
                 tecnológico que ha llevado a la convergencia de tecnologías
                 digitales, físicas y biológicas. Ha transformado la forma en que
-                vivimos, trabajamos y nos relacionamos.
+                vivimos, trabajamos y nos relacionamos
               </Typography>
             </Box>
           </Box>

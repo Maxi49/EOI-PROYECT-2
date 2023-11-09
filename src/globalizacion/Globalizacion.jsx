@@ -129,7 +129,7 @@ export const Globalizacion = () => {
           >
             La{" "}
             <span style={{ color: "#6d59ea", fontWeight: 1000 }}>
-              Globalizacion
+              Globalización
             </span>
           </Typography>
           <Typography
@@ -159,7 +159,7 @@ export const Globalizacion = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 860, sm: 1000, md: 900, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -190,7 +190,7 @@ export const Globalizacion = () => {
                   mb: 2,
                 }}
               >
-                ¿Que es?
+                ¿Qué es?
               </Typography>
               <Typography
                 variant={"h5"}
@@ -230,7 +230,7 @@ export const Globalizacion = () => {
             gap: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 910, sm: 1000, md: 900, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -261,7 +261,7 @@ export const Globalizacion = () => {
                   mb: 3,
                 }}
               >
-                De que se trato?
+                ¿De qué se trata?
               </Typography>
               <Typography
                 variant={"h5"}

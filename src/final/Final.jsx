@@ -138,7 +138,7 @@ export const Final = () => {
             }}
           >
             <span style={{ fontWeight: 1000 }}>
-              Gracias por leer y escuchar
+              Gracias por leer
             </span>
           </Typography>
         </Box>

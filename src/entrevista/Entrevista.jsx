@@ -1,8 +1,8 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useColorChangeOnView } from "../hook/useColorChangeOnView";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography } from "@mui/material";
 
 export const Entrevista = () => {
   const boxRef = useColorChangeOnView("#000");
@@ -158,7 +158,7 @@ export const Entrevista = () => {
               mt: 2,
             }}
           >
-            a un profesional en psicologia
+            a un profesional en psicología
           </Typography>
         </Box>
         <Box
@@ -289,7 +289,7 @@ export const Entrevista = () => {
                 }}
               >
                 <span style={{ color: "#000", fontWeight: "800px" }}>
-                  Efectos Psicológicos de las TICs en Adolescentes
+                  Efectos psicológicos de las TICs en adolescentes
                 </span>
                 <br />
                 El consumo frecuente de TICs afecta negativamente la autoestima
@@ -308,7 +308,7 @@ export const Entrevista = () => {
                 <br />
                 <br />
                 <span style={{ color: "#000", fontWeight: "800px" }}>
-                  Manipulación en el Consumo de TICs
+                  Manipulación en el consumo de TICs
                 </span>
                 <br />
                 La manipulación es común en esta etapa, con adolescentes
@@ -316,7 +316,7 @@ export const Entrevista = () => {
                 <br />
                 <br />
                 <span style={{ color: "#000", fontWeight: "800px" }}>
-                  Diferencias según Clase Social
+                  Diferencias según la clase social
                 </span>
                 <br />
                 La influencia de las TICs varía según la clase social, con
@@ -326,8 +326,7 @@ export const Entrevista = () => {
                 <br />
                 <br />
                 <span style={{ color: "#000", fontWeight: "800px" }}>
-
-                Papel del Factor Económico y Cultural <br />
+                  Papel del factor económico y cultural <br />
                 </span>
                 El factor económico y cultural es fundamental, ya que aquellos
                 con más recursos pueden exhibir su estilo de vida, lo que puede

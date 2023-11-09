@@ -1,10 +1,8 @@
 import { Typography } from "@mui/material";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
 import { Box, Container } from "@mui/system";
 import { useColorChangeOnView } from "./hook/useColorChangeOnView";
-
-
 
 const typo = createTheme();
 
@@ -40,8 +38,7 @@ export const Start = () => {
   return (
     <ThemeProvider theme={typo}>
       <Container
-
-        component={'section'}
+        component={"section"}
         maxWidth="md"
         sx={{
           marginTop: { xs: 2, md: 4 },
@@ -55,7 +52,7 @@ export const Start = () => {
         }}
       >
         <Box
-        ref={boxRef}
+          ref={boxRef}
           className="start"
           component={"section"}
           sx={{
@@ -72,10 +69,11 @@ export const Start = () => {
             mb={3}
             sx={{ textAlign: "center", color: "white" }}
           >
-            El <span style={{color:deepPurple["A400"]}}>consumo</span> de las <span style={{color:deepPurple["A400"]}} >redes sociales</span>
+            El <span style={{ color: deepPurple["A400"] }}>consumo</span> de las{" "}
+            <span style={{ color: deepPurple["A400"] }}>redes sociales</span>
           </Typography>
           <Typography variant="h6" sx={{ textAlign: "center", color: "white" }}>
-            ¿Porque nos afecta tanto?
+            ¿Por qué nos afecta tanto?
           </Typography>
         </Box>
         <Box
@@ -100,8 +98,9 @@ export const Start = () => {
               width: "80vw",
             }}
           >
-            En esta pagina se expondran datos sobre el uso de las redes
-            sociales obtenidos desde encuestas a personas de entre 16 a 18 años
+            En esta página se expondrán datos sobre el uso de las redes
+            sociales, obtenidos a través de encuestas a personas de entre 13 a
+            18 años
           </Typography>
         </Box>
       </Container>

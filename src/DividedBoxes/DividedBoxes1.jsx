@@ -1,9 +1,7 @@
-import { ThemeProvider, Typography, createTheme } from '@mui/material'
-import { Box } from '@mui/system'
+import { ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Box } from "@mui/system";
 export const DividedBoxes1 = () => {
-
   const theme = createTheme({
-    
     typography: {
       h1: {
         fontSize: "2.2rem",
@@ -77,49 +75,49 @@ export const DividedBoxes1 = () => {
   });
   return (
     <ThemeProvider theme={theme}>
-
-    <Box
-          sx={{
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            direction: "row",
-            backgroundColor: "#004a8f",
-            borderRadius: 10,
-            gap: 10,
-            width: { xs: "95vw", md: "35vw" },
-            height: { xs:500, sm:300, md: 450, lg:600,xl:700},
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection:{xs:'column'}}}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Typography
-                variant="h4"
-                sx={{
-                  width: { xs: "80vw", md: "30vw" },
-                  color: "White",
-                  fontWeight: 700,
-                }}
-              >
-                Consumo
-              </Typography>
-              <Typography
-                variant={"h5"}
-                color={"white"}
-                textAlign={"start"}
-                sx={{
-                  width: { xs: "80vw", md: "20vw" },
-                  color: "#bdbcbe",
-                  fontWeight: 700,
-                }}
-              >
-                El consumo se refiere a la adquisicion de bienes y servicios necesarios sin excesos ni desperdicio
-              </Typography>
-            </Box>
+      <Box
+        sx={{
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "center",
+          alignItems: "center",
+          display: "flex",
+          direction: "row",
+          backgroundColor: "#004a8f",
+          borderRadius: 10,
+          gap: 10,
+          width: { xs: "95vw", md: "35vw" },
+          height: { xs: 500, sm: 300, md: 450, lg: 600, xl: 700 },
+          boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
+        }}
+      >
+        <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Typography
+              variant="h4"
+              sx={{
+                width: { xs: "80vw", md: "30vw" },
+                color: "White",
+                fontWeight: 700,
+              }}
+            >
+              Consumo
+            </Typography>
+            <Typography
+              variant={"h5"}
+              color={"white"}
+              textAlign={"start"}
+              sx={{
+                width: { xs: "80vw", md: "20vw" },
+                color: "#bdbcbe",
+                fontWeight: 700,
+              }}
+            >
+              El consumo se refiere a la adquisición de bienes y servicios
+              necesarios sin excesos ni desperdicio
+            </Typography>
           </Box>
         </Box>
+      </Box>
     </ThemeProvider>
-  )
-}
+  );
+};

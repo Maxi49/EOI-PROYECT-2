@@ -113,7 +113,7 @@ export const DividedBoxesGlobal1 = () => {
               <ul>
                 <li>
                   <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
-                    Tecnologías Disruptivas
+                    Tecnologías disruptivas
                   </span>
                   <br />
                   La adopción de tecnologías como la inteligencia artificial,
@@ -124,12 +124,12 @@ export const DividedBoxesGlobal1 = () => {
                 <br />
                 <li>
                   <span style={{ color: "#9bbfdd", fontWeight: 1000 }}>
-                    Conectividad Global
+                    Conectividad global
                   </span>
                   <br />
                   La expansión de Internet y las redes de comunicación ha
-                  permitido una comunicación global instantánea,
-                  independientemente de la ubicación geográfica.
+                  permitido una conexión global instantánea, independientemente
+                  de la ubicación geográfica.
                 </li>
               </ul>
             </Typography>

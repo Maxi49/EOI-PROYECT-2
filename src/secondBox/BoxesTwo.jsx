@@ -146,7 +146,7 @@ export const BoxesTwo = () => {
               mt: 2,
             }}
           >
-            ¿Como afectan nuestro dia a dia?
+            ¿Cómo afectan nuestro día a día?
           </Typography>
         </Box>
         <Box
@@ -162,7 +162,7 @@ export const BoxesTwo = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 930, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -192,7 +192,7 @@ export const BoxesTwo = () => {
                   fontWeight: 700,
                 }}
               >
-                Que son
+                ¿Qué son?
               </Typography>
               <Typography
                 variant={"h5"}
@@ -234,7 +234,7 @@ export const BoxesTwo = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -265,7 +265,7 @@ export const BoxesTwo = () => {
                   mb: 3,
                 }}
               >
-                Relacion con el{" "}
+                Relación con el{" "}
                 <span style={{ color: "#009FFF" }}>Mercado</span>
               </Typography>
               <Typography

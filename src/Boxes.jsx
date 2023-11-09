@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./styles.css";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { DividedBoxes1 } from "../src/DividedBoxes/DividedBoxes1";
@@ -80,7 +80,6 @@ export const Boxes = () => {
         }}
       >
         <Box
-
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -92,7 +91,6 @@ export const Boxes = () => {
             justifyContent: "center",
             textAlign: "start",
             alignItems: "center",
-
           }}
           component={"section"}
         >
@@ -123,7 +121,7 @@ export const Boxes = () => {
               mt: 2,
             }}
           >
-            Todo esto tiene que ver con un apartado psicologico
+            Todo esto tiene que ver con un apartado psicológico
           </Typography>
         </Box>
         <Box
@@ -139,7 +137,7 @@ export const Boxes = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 930, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)"
+            boxShadow: "0px 4px 6px rgba(2, 2, 2, 0.9)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -169,7 +167,7 @@ export const Boxes = () => {
                   fontWeight: 700,
                 }}
               >
-                El porque de su uso
+                El porqué de su uso
               </Typography>
               <Typography
                 variant={"h4"}
@@ -182,9 +180,9 @@ export const Boxes = () => {
                 }}
               >
                 <ul>
-                  <li>Presion por aceptacion social</li>
+                  <li>Presión por aceptación social</li>
                   <br />
-                  <li>Comparacion Social</li>
+                  <li>Comparación social</li>
                   <br />
                   <li>Efectos en el autoestima</li>
                   <br />
@@ -229,7 +227,7 @@ export const Boxes = () => {
             mb: 5,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 1000, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -259,7 +257,7 @@ export const Boxes = () => {
                   fontWeight: 700,
                 }}
               >
-                Efectos positivos del{" "}
+                Consecuencias del{" "}
                 <span style={{ color: "#00b900", fontWeight: 1000 }}>
                   consumo
                 </span>
@@ -307,7 +305,7 @@ export const Boxes = () => {
             mb: 10,
             width: { xs: "95vw", md: "70vw" },
             height: { xs: 950, sm: 1000, md: 700, lg: 900 },
-            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)"
+            boxShadow: "0px 4px 6px rgba(0,0, 0, 0.4)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: { xs: "column" } }}>
@@ -337,7 +335,7 @@ export const Boxes = () => {
                   fontWeight: 700,
                 }}
               >
-                Efectos negativos del{" "}
+                Consecuencias del{" "}
                 <span style={{ color: "#b90000" }}>consumismo</span>
               </Typography>
               <Typography
@@ -351,13 +349,13 @@ export const Boxes = () => {
                 }}
               >
                 <ul>
-                  <li>Adiccion a la pantalla</li>
+                  <li>Adicción a la pantalla</li>
                   <br />
                   <li>Aislamiento Social</li>
                   <br />
-                  <li>Perdida de la paciencia</li>
+                  <li>Pérdida de la paciencia</li>
                   <br />
-                  <li>Sobrecarga de informacion</li>
+                  <li>Sobrecarga de información</li>
                 </ul>
               </Typography>
             </Box>
